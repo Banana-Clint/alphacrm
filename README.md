@@ -8,7 +8,7 @@ Before you begin, ensure you have met the following requirements:
 
  ## Installation 
  To install the project, follow these steps: 
- 1. Clone the repository: ```bash git clone https://github.com/banan-clint/alphacrm.git ```
+ 1. Clone the repository: ```bash git clone https://github.com/Banana-Clint/alphacrm ```
  2. Navigate to the project directory
  3. Install the dependencies: ``` npm install ``` 
 
