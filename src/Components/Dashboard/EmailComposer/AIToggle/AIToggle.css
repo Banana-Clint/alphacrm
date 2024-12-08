@@ -1,0 +1,18 @@
+.ai-toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ai-message-input {
+    width: 75%;
+    margin-right: 5px;
+  }
+  
+  .ai-toggle-button {
+    max-width: 20%;
+    font-size: var(--small-text-size);
+  }

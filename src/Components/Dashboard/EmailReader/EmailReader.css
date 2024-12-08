@@ -1,0 +1,20 @@
+.Email-Reader-Wrapper{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+.Email-Element-Wrapper{
+display: flex;
+flex-direction: column;
+background-color: var(--main-padding-color);
+margin-bottom: 5px;
+cursor: pointer;
+}
+.Email-Element-Wrapper h2{
+    font-size: var(--large-small-size);
+}
+.Email-Element-Wrapper p{
+    font-size: var(--small-text-size);
+}
