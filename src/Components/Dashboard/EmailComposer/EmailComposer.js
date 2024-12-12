@@ -14,6 +14,7 @@ export const EmailComposer = () => {
   const [isAIGenerating,setIsAIGenerating]=useState(false)
   const [aiSubject,setAISubject]=useState('')
   const [to, setTo] = useState('');
+  const [isLoading,setIsLoading]=useState(false)
   const handleToggleCatalog = () => {
     setIsCatalogVisible(!isCatalogVisible);
   };

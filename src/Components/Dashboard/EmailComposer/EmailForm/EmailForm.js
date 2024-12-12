@@ -15,7 +15,7 @@ const EmailForm = ({ setResponseMessage, handleToggleCatalog,isCatalogVisible,is
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/Api/Email/SendEmail', {
+      const response = await fetch('https://alphaapi-657550777490.us-central1.run.app/Api/Email/SendEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

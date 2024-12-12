@@ -1,17 +1,20 @@
 import axios from 'axios';
 
-const AIGenerate = async (prompt,clientId,clientAddress) => {
+const AIGenerate = async (prompt, clientId, clientAddress, setIsLoading) => {
+  setIsLoading(true); // Start loading state
   try {
-    const response = await axios.post('http://localhost:3001/Api/EMail/GenerateEmail', {
+    const response = await axios.post('https://alphaapi-657550777490.us-central1.run.app/Api/EMail/GenerateEmail', {
       clientId: clientId || '',
-      textPrompt: prompt ||'',
-      emailAddress: clientAddress ||''
-  
+      textPrompt: prompt || '',
+      emailAddress: clientAddress || ''
     });
-    return response.data.emailContent;
+
+    return response.data.emailContent; // Return email content on success
   } catch (err) {
     console.error('Error generating email content:', err.message);
-    return '';
+    return ''; // Return empty string on error
+  } finally {
+    setIsLoading(false); // Always stop loading state
   }
 };
 
