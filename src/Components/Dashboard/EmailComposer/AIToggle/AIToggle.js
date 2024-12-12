@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AIGenerate from '../AIGenerate/AIGenerate';
 import './AIToggle.css'
 
-const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGenerating, userInfo,to,isLoading,setIsLoading }) => {
+const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGenerating, userInfo,to,setIsLoading }) => {
   const [aiPrompt, setAIPrompt] = useState('');
 
   const handleToggleAIGeneration = () => {
@@ -13,7 +13,7 @@ const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGeneratin
 
   const generateEmail = async () => {
     try {
-      setIsLoading(!isLoading)
+      setIsLoading(true)
       const AiEmail = await AIGenerate(aiPrompt?aiPrompt:"", 
         userInfo?userInfo.id:"",userInfo?userInfo.client_email:to,setIsLoading);
       setAIMessage(AiEmail.body);
