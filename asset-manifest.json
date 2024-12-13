@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/alphacrm/static/css/main.b4b927ea.css",
-    "main.js": "/alphacrm/static/js/main.6430ba84.js",
+    "main.js": "/alphacrm/static/js/main.92386269.js",
     "static/css/320.52471c29.chunk.css": "/alphacrm/static/css/320.52471c29.chunk.css",
-    "static/js/320.e9cb2172.chunk.js": "/alphacrm/static/js/320.e9cb2172.chunk.js",
+    "static/js/320.6e03892c.chunk.js": "/alphacrm/static/js/320.6e03892c.chunk.js",
     "index.html": "/alphacrm/index.html",
     "main.b4b927ea.css.map": "/alphacrm/static/css/main.b4b927ea.css.map",
-    "main.6430ba84.js.map": "/alphacrm/static/js/main.6430ba84.js.map",
+    "main.92386269.js.map": "/alphacrm/static/js/main.92386269.js.map",
     "320.52471c29.chunk.css.map": "/alphacrm/static/css/320.52471c29.chunk.css.map",
-    "320.e9cb2172.chunk.js.map": "/alphacrm/static/js/320.e9cb2172.chunk.js.map"
+    "320.6e03892c.chunk.js.map": "/alphacrm/static/js/320.6e03892c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4b927ea.css",
-    "static/js/main.6430ba84.js"
+    "static/js/main.92386269.js"
   ]
 }
