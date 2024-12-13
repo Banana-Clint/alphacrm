@@ -17,8 +17,8 @@ function App() {
         
       } else {
         // Redirect to the authentication flow if not authenticated
-        window.location.href = 'https://alphaapi-657550777490.us-central1.run.app/Api/Auth/Auth';
-      }
+        window.location.href = 'https://apialpha-657550777490.us-central1.run.app/Api/Auth/Auth';
+      }             
     };
 
     // Check authentication status on component mount
