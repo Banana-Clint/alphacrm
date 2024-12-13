@@ -3,7 +3,7 @@ import axios from 'axios';
 const AIGenerate = async (prompt, clientId, clientAddress, setIsLoading) => {
   setIsLoading(true); // Start loading state
   try {
-    const response = await axios.post('https://apialpha-657550777490.us-central1.run.app/Api/EMail/GenerateEmail', {
+    const response = await axios.post('https://crmapi-657550777490.us-central1.run.app/Api/EMail/GenerateEmail', {
       clientId: clientId || '',
       textPrompt: prompt || '',
       emailAddress: clientAddress || ''
