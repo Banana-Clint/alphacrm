@@ -27,11 +27,6 @@ const AIToggle = ({
       const userId = userInfo?.id || '';
       const clientEmail = userInfo?.client_email || to;
 
-      if (!prompt || !userId || !clientEmail) {
-        alert('Required information is missing. Please provide valid input.');
-        setIsLoading(false);
-        return;
-      }
 
       const AiEmail = await AIGenerate(prompt, userId, clientEmail, setIsLoading);
       setAIMessage(AiEmail?.body || '');
