@@ -20,7 +20,7 @@ const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGeneratin
         userInfo?.client_email || to, // Default to 'to' if client_email is unavailable
         setIsLoading // Pass the function as is
       );
-  
+      console.log(AiEmail)
       // Update state with the generated email content
       setAIMessage(AiEmail.body);
       setAISubject(AiEmail.subject);
