@@ -15,7 +15,7 @@ const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGeneratin
       setIsLoading(true); // Indicate that the process has started
    
       const AiEmail = await AIGenerate(
-        aiPrompt || "", // Use an empty string if aiPrompt is falsy
+        aiPrompt || "The user did not add a prompt use the most recent metadata or mails if available ", // Use an empty string if aiPrompt is falsy
         userInfo?.id || "", // Use an empty string if userInfo or userInfo.id is undefined
         userInfo?.client_email || to, // Default to 'to' if client_email is unavailable
         setIsLoading // Pass the function as is
