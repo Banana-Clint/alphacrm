@@ -34,7 +34,7 @@ export default function EmailCatalog({ onClose, setUserInfo }) {
           <button 
             key={client.id} 
             className="email-item"
-            onClick={() => {console.log(client) ; setUserInfo(client);onClose()}}
+            onClick={() => {setUserInfo(client);onClose()}}
           >
             {client.email}
           </button>
