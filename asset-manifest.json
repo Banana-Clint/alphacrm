@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/alphacrm/static/css/main.b4b927ea.css",
-    "main.js": "/alphacrm/static/js/main.1e287cbe.js",
+    "main.js": "/alphacrm/static/js/main.017b4177.js",
     "static/css/320.52471c29.chunk.css": "/alphacrm/static/css/320.52471c29.chunk.css",
     "static/js/320.11b937c5.chunk.js": "/alphacrm/static/js/320.11b937c5.chunk.js",
     "index.html": "/alphacrm/index.html",
     "main.b4b927ea.css.map": "/alphacrm/static/css/main.b4b927ea.css.map",
-    "main.1e287cbe.js.map": "/alphacrm/static/js/main.1e287cbe.js.map",
+    "main.017b4177.js.map": "/alphacrm/static/js/main.017b4177.js.map",
     "320.52471c29.chunk.css.map": "/alphacrm/static/css/320.52471c29.chunk.css.map",
     "320.11b937c5.chunk.js.map": "/alphacrm/static/js/320.11b937c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4b927ea.css",
-    "static/js/main.1e287cbe.js"
+    "static/js/main.017b4177.js"
   ]
 }
