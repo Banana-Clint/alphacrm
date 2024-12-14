@@ -33,7 +33,6 @@ const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGeneratin
             value={aiPrompt}
             onChange={(e) => setAIPrompt(e.target.value)}
             placeholder="AI-generated message"
-            required
           />
           <button className="ai-toggle-button" onClick={generateEmail}>Generate</button>
         </>
