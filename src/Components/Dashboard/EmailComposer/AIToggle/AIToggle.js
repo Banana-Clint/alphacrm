@@ -12,18 +12,27 @@ const AIToggle = ({ setAIMessage, setAISubject, isAIGenerating, setIsAIGeneratin
 
   const generateEmail = async () => {
     try {
-      setIsLoading(true)
-      const AiEmail = await AIGenerate(aiPrompt?aiPrompt:"", 
-        userInfo?userInfo.id:"",userInfo?userInfo.client_email:to,setIsLoading);
+      setIsLoading(true); // Indicate that the process has started
+   
+      const AiEmail = await AIGenerate(
+        aiPrompt || "", // Use an empty string if aiPrompt is falsy
+        userInfo?.id || "", // Use an empty string if userInfo or userInfo.id is undefined
+        userInfo?.client_email || to, // Default to 'to' if client_email is unavailable
+        setIsLoading // Pass the function as is
+      );
+  
+      // Update state with the generated email content
       setAIMessage(AiEmail.body);
       setAISubject(AiEmail.subject);
       setIsAIGenerating(true);
     } catch (error) {
       console.error('Error generating email:', error.message);
       alert('Error generating email. Please try again.');
+    } finally {
+      setIsLoading(false); // Ensure loading state is reset
     }
   };
-
+  
   return (
     <div className="ai-toggle-container">
       {isAIGenerating && (
